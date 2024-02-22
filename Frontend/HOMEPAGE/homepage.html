@@ -12,15 +12,57 @@
 
 <body>
     <header>
-        <h1>WELCOME TO PINHOTELS </h1>
-        <h6>India's most trusted and secure hotel booking app</h6>
+        <div id="mainheading">
+            <h1 id=>WELCOME TO PINHOTELS </h1>
+            <h6>India's most trusted and secure hotel booking app</h6>
+        </div>
         <div id="slbtn">
             <button onclick="Login(event)">LOGIN</button>
             <button onclick="Signup(event)">SIGNUP</button>
         </div>
     </header>
     <main>
+        <div id="hotel_search">
+            <form action="#" onsubmit="getformvalue(event)" class="form-control">
+                <label for="destination">Enter your Destination</label>
+                <select name="hotels" id="destination">
+                    <option value="delhi">DELHI</option>
+                    <option value="mumbai">MUMBAI</option>
+                  </select>
+                <br>
+                <label for="guest">No of guests</label>
+                <input type="number" id="guest" placeholder="enter no of guest" required>
+                <br>
+                <label for="check-in">Check In Date</label>
+                <input type="date" id="check-in" placeholder="enter your check in date">
+                <br>
+                <label for="Check-out">Check Out Date</label>
+                <input type="date" id="check-out" placeholder="enter your check out date">
+                <br>
+                <input type="checkbox" id="gym" name="gym" value="gym">
+                <label for="gym"> GYM</label><br>
+                <input type="checkbox" id="pool" name="pool" value="pool">
+                <label for="pool">POOL</label><br>
+                <input type="checkbox" id="spa" name="spa" value="spa">
+                <label for="spa">spa</label><br>
+                <input type="checkbox" id="wifi" name="wifi" value="wifi">
+                <label for="wifi"> WIFI</label><br>
+                <input type="checkbox" id="resturant" name="resturant" value="resturant">
+                <label for="resturant"> RESTURANT</label><br>
+                <button id="search_hotels">Search Hotels</button>
+            </form>
+        </div>
+        <div id="hotel_details">
 
+
+        </div>
+        <div>
+            <div class="scroll-container">
+                <img src="meranda review.png" alt="Cinque Terre">
+                <img src="review2.png" alt="Forest">
+                <img src="great-management-responses-1.png" alt="Northern Lights">
+            </div>
+        </div>
     </main>
     <footer>
 
@@ -30,4 +72,5 @@
         integrity="sha512-JWQFV6OCC2o2x8x46YrEeFEQtzoNV++r9im8O8stv91YwHNykzIS2TbvAlFdeH0GVlpnyd79W0ZGmffcRi++Bw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

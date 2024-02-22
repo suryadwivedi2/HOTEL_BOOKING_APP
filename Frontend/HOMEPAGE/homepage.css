@@ -1,5 +1,21 @@
-#slbtn{
-margin-top: 0px;
-padding-left: 1200px;
+#mainheading {
+    padding-left: 30%;
 }
 
+#slbtn {
+    margin-top: 0px;
+    padding-left: 1200px;
+}
+
+div.scroll-container {
+    margin-top: 300px;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    height: 350px;
+}
